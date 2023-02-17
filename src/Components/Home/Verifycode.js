@@ -3,12 +3,7 @@ import "../HomeStyle/Verifycode.css";
 import { useForm } from "react-hook-form";
 
 const Verifycode = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
+  const { register, handleSubmit, watch } = useForm();
   const onSubmit = (data) => console.log(data);
 
   console.log(watch("example"));
