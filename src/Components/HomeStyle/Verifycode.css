@@ -1,0 +1,89 @@
+.Text_1 {
+  background-color: black;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: black;
+}
+.exampleRequired_From {
+  width: 60% !important;
+  margin: 20px auto 7px;
+  line-height: 3.125 !important;
+  outline: none;
+  font-size: inherit !important;
+  background-color: rgb(243, 241, 241) !important;
+  text-align: left;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  border-left: 0 !important;
+  border-bottom: 2px solid rgb(243, 22, 22) !important;
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-radius: 0 !important;
+}
+.exampleRequired_From:focus {
+  box-shadow: none !important;
+}
+.Verification {
+  margin-bottom: 30px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 20px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.provided {
+  line-height: 20px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+.Resend {
+  line-height: 20px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.received {
+  color: #efbe00;
+  cursor: pointer;
+  text-decoration-line: underline;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.CenCle {
+  padding-right: 23px;
+  padding-top: 5px;
+  padding-left: 23px;
+  padding-bottom: 5px;
+  margin-right: 12px;
+  border: 2px solid whitesmoke;
+  z-index: 1;
+  color: whitesmoke;
+  background-color: rgb(146, 146, 146) !important;
+  border-radius: 5px;
+}
+.CenCle:hover {
+  background-color: rgb(177, 175, 175) !important;
+}
+
+.Device {
+  border-radius: 4px;
+}
+.verify_1 {
+  padding-right: 23px;
+  padding-top: 5px;
+  padding-left: 23px;
+  padding-bottom: 5px;
+  border: 2px solid #efbe00;
+  z-index: 1;
+  color: #efbe00;
+  background-color: black;
+  border-radius: 5px;
+}
+.verify_1:hover {
+  background-color: #c09c0d5e;
+}
+
+@media (max-width: 768px) {
+  .verify_1 {
+  }
+}
