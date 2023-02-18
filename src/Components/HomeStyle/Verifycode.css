@@ -83,6 +83,14 @@
   background-color: #c09c0d5e;
 }
 
+.GoogleWait {
+  text-decoration: none;
+}
+.GoogleWait1 {
+  text-decoration: none;
+  color: whitesmoke !important;
+}
+
 @media (max-width: 768px) {
   .verify_1 {
   }

