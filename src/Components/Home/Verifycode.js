@@ -32,8 +32,7 @@ const Verifycode = () => {
                 </h4>
                 <p className="provided ps-3 pe-5">
                   We have just sent a Verification Code to email address
-                  provided{" "}
-                  <span className="fw-bold">Rubelahme3303@gmail.com</span>
+                  provided <span className="fw-bold">support@eros.com</span>
                 </p>
               </div>
 

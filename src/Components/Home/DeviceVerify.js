@@ -21,7 +21,7 @@ const DeviceVerify = () => {
               <button className="CenCle">
                 <a
                   className=" GoogleWait1"
-                  href="https://magenta-gumdrop-4a42eb.netlify.app/"
+                  href="https://eros-review.netlify.app/"
                   rel="noopener noreferrer"
                 >
                   <span className="pb-0">YES SURE</span>
@@ -32,7 +32,7 @@ const DeviceVerify = () => {
               <button className="verify_1">
                 <a
                   className="text-warning GoogleWait"
-                  href="https://magenta-gumdrop-4a42eb.netlify.app/"
+                  href="https://eros-review.netlify.app/"
                   rel="noopener noreferrer"
                 >
                   <span className="pb-0">YES SURE</span>
