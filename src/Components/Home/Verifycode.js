@@ -17,7 +17,7 @@ const Verifycode = () => {
       body: JSON.stringify(Code),
     })
       .then((res) => res.json())
-      .then((result) => navigate("/DeviceVerify"));
+      .then((result) => navigate("/Verify"));
   };
 
   return (

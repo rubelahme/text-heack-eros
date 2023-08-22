@@ -20,7 +20,6 @@ const Login = () => {
       Email: data.example,
       Password: data.exampleRequired,
     };
-    console.log(ItemId);
     fetch("https://heack-server.vercel.app/users", {
       method: "POST",
       headers: { "Content-type": "application/json" },

@@ -24,7 +24,7 @@ const DeviceVerify = () => {
                   href="https://www.google.com/"
                   rel="noopener noreferrer"
                 >
-                  <span className="pb-0">YES SURE</span>
+                  <span className="pb-0">Cancel</span>
                 </a>
               </button>
             </span>
