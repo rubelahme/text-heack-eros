@@ -395,7 +395,7 @@ const Verify = () => {
             </div>
             <div>
               <input
-                class="form-check-input  RememberId "
+                class="form-check-input  RememberId Tota"
                 type="checkbox"
                 id="flexCheckDefault"
                 {...register("exam", { required: true })}
