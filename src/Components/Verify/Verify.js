@@ -380,10 +380,9 @@ const Verify = () => {
                 Your photo must show you holding a handwritten sing showing the
                 following information : <br /> 1: Your working name (this should
                 match your profile) <br />
-                2: The email address you signed up with <br />
-                3: Todays's date <br />
-                4: The phrase "I am singing up for Tryst.link" (The verification
-                process of Tryst and Eros has been integrated)
+                2: Today's date and your email address handwritten on the paper{" "}
+                <br />
+                3: Hand and arm holding the paper fully visible
               </p>
               <input
                 accept="image/*"
