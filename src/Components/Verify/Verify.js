@@ -322,14 +322,7 @@ const Verify = () => {
       <div className="container text-center">
         <div className="mt-2">
           <p className="verifieds">Let's get you verified</p>
-          <p className="identity">
-            Before you start, please prepare your identity document and make
-            sure it is valid.
-          </p>
-          <p className="identity">
-            We also require you to agree to our processing of your personal
-            data:
-          </p>
+
           <h6 className="text-danger mt-4 mb-1 pb-0">
             ID card, Passport, Residence permit, Driver's license
           </h6>
@@ -378,9 +371,9 @@ const Verify = () => {
             <div>
               <p className="p-0 mb-1 UploadData">
                 Your photo must show you holding a handwritten sing showing the
-                following information : <br /> 1: Your working name (this should
+                following information : <br /> 1: Your username (this should
                 match your profile) <br />
-                2: Today's date and your email address handwritten on the paper{" "}
+                2: Your face while holding a piece that has "PrivateDelights".
                 <br />
                 3: Hand and arm holding the paper fully visible
               </p>
